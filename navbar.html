@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <style>
+        #nav{
+            /* border: 0px solid black; */
+            display: flex;
+            justify-content: space-between;
+            background-color: #1c2938;
+            color: white;
+            border-radius: 12px;
+        }
+        #nav>div{
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #nav>div:first-child{
+            padding-left: 14px;
+            width: 20%;
+        }
+        #nav>div:nth-child(2){
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="nav">
+        <div>
+            <p>Reebok</p>
+        </div>
+        <div>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Login</p>
+            <p>Signup</p>
+        </div>
+    </div>
 </body>
 </html>
